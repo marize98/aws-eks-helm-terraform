@@ -35,7 +35,7 @@ helm history ${APP_NAME}
 echo "--------------------"
 echo "\n"
 echo "--------------------"
-echo "Load Balancer url for testing"
+echo "Load Balancer para testing"
 echo "--------------------"
 echo "http://"$(kubectl get svc --namespace eks-k8s-demo eks-k8s-demo-app -o jsonpath='{.status.loadBalancer.ingress[0].hostname}')
 echo "--------------------"
